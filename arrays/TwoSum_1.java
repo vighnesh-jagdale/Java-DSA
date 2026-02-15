@@ -1,4 +1,3 @@
-package com.vighnesh.dsa.arrays.easy;
 import java.util.HashMap;
 
 /**
