@@ -1,6 +1,5 @@
 public class BestTimeToBuyAndSellStock_121 {
 
-
 /**
  * Approach:
  * Simple approach to calculate the best time to buy and sell.
