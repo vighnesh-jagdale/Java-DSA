@@ -21,7 +21,7 @@ public class RemoveDuplicatesFromSortedArray_26{
  */
 
 
-    public int Bruteforce(int[] nums) {
+    public static int Bruteforce(int[] nums) {
         if (nums.length == 0) return 0;
 
         int n = nums.length;
@@ -42,7 +42,7 @@ public class RemoveDuplicatesFromSortedArray_26{
         return n;
     }
 
-    public int removeDuplicates(int[] nums) {
+    public static int removeDuplicates(int[] nums) {
         if (nums == null || nums.length == 0) {
             return 0;
         }
