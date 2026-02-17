@@ -1,3 +1,6 @@
+import java.util.List;
+import java.util.ArrayList;
+
 class FindAllDisappearedNumberFromArray_448{
 
 /**
@@ -31,7 +34,7 @@ class FindAllDisappearedNumberFromArray_448{
  *  - Space: O(1)
  */
 
-    public List<Integer> findDisappearedNumbersBrute(int[] nums) {
+    public static List<Integer> findDisappearedNumbersBrute(int[] nums) {
         List<Integer> result = new ArrayList<>();
 
         for (int i = 1; i <= nums.length; i++) {
@@ -52,7 +55,7 @@ class FindAllDisappearedNumberFromArray_448{
         return result;
     }
 
-    public List<Integer> findDisappearedNumbers(int[] nums) {
+    public static List<Integer> findDisappearedNumbers(int[] nums) {
 
         List<Integer> result = new ArrayList<>();
 
@@ -74,10 +77,16 @@ class FindAllDisappearedNumberFromArray_448{
 
         return result;
     }
+    public static void main(String[] args){
+        int[] nums = {1,4,4,2,1};
+        
+        System.out.println(findDisappearedNumbersBrute(nums));
+        System.out.println(findDisappearedNumbers(nums));
+
+    }
 }
 
 
 
 
     
-}
