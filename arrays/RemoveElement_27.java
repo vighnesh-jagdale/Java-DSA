@@ -1,4 +1,4 @@
-public class removeElement_27{
+public class RemoveElement_27{
 
 /**
  * Approach:
