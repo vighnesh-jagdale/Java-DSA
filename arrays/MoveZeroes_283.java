@@ -41,22 +41,22 @@
  *  - Space: O(1)
  */
 
- public void moveZeroes(int[] nums) {
+ public static void moveZeroes(int[] nums) {
         int insPos = 0;
         for(int i = 0; i < nums.length; i++){
             if(nums[i] != 0){
                 nums[insPos] = nums[i];
-                ins++;
+                insPos++;
             }
         }
 
         while(insPos < nums.length){
             nums[insPos] = 0;
-            ins++;
+            insPos++;
         }
     }
 
-    public void moveZeroesSwapping(int[] nums) {
+    public static void moveZeroesSwapping(int[] nums) {
         int prev = 0;
         for(int i = 0; i < nums.length; i++){
             if(nums[i] != 0){
@@ -65,6 +65,15 @@
                 nums[i] = temp;
                 prev++;
             }
+        }
+    }
+
+    public static void main(String[] args){
+        int[] nums ={1,0,2,3,2,0,0,4,5,1};
+        moveZeroes(nums);
+        moveZeroesSwapping(nums);
+        for(int num:nums){
+            System.out.print(num + " ");
         }
     }
 }
